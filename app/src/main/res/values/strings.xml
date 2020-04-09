@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">USD to Yen</string>
+    <string name="strgTitle">U.S. Dollars to Yen</string>
+    <string name="hintInput">Currency to convert</string>
+    <string name="strgToYen">USD to Yen</string>
+    <string name="strgToUSD">Yen to USD</string>
+    <string name="strgButtonConvert">Convert</string>
+    <string name="strgResult">Result displayed here.</string>
+</resources>

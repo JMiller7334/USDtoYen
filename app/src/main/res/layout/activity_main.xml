@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_horizontal"
+        android:text="@string/strgTitle"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/hintInput"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTitle" />
+
+    <RadioGroup
+        android:id="@+id/idRadioGroup"
+        android:layout_width="275dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idInput">
+
+        <RadioButton
+            android:id="@+id/idToYen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/strgToYen" />
+
+        <RadioButton
+            android:id="@+id/idToUSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strgToUSD" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idButtonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/strgButtonConvert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idRadioGroup" />
+
+    <TextView
+        android:id="@+id/idResult"
+        android:layout_width="264dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/strgResult"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idButtonConvert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
